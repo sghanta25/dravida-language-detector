@@ -1,51 +1,32 @@
-# dravida-language-detector
-# drāviḍa – South Indian Language Detector 🌍🗣️
-# drāviḍa 🪷
+🪷 drāviḍa – South Indian Language Detector 🌍🗣️
+drāviḍa is a minimalist, web-based AI tool that celebrates the richness of South India's linguistic heritage.
+Built using FastText, Flask, and a clean front-end, it detects which South Indian language—Tamil, Telugu, Kannada, or Malayalam—is being used when written in transliterated Latin script (e.g., naan unnai virumburen).
 
-**drāviḍa** is a minimalist, web-based language detection tool that celebrates the richness of South India's linguistic heritage. Built using **FastText**, **Flask**, and **pyttsx3**, it detects the spoken language from user input—be it **Tamil**, **Telugu**, **Kannada**, or **Malayalam**—and provides immediate audio feedback in the identified language.
+Rather than relying on native script or speech, drāviḍa understands the spoken rhythm in written form, making it accessible to a wider audience who may speak but not read these languages.
 
-The user interface is elegantly themed with a calming **powder blue** palette, accompanied by floating words in detected scripts, offering an intuitive and immersive experience.
+🔍 Core Features
+🧠 Transliterated Text Language Detection
+Detects South Indian languages written in English script using FastText models trained on transliterated datasets.
 
----
+✨ Minimal, Culturally Themed UI
+Soft powder blue layout with floating word animations inspired by South Indian scripts, creating an intuitive and immersive experience.
 
-## 🔍 Core Features
+📜 Lightweight & Fast
+Simple Flask back-end with snappy response time for smooth user interaction.
 
-- 🎙️ **Real-Time Speech Recognition**  
-  Captures and transcribes user speech using the Web Speech API.
-
-- 🧠 **Language Detection**  
-  Uses `langdetect` or optionally `FastText` for accurate identification of South Indian languages.
-
-- 🗣 **Voice Feedback**  
-  Converts the detected language into spoken feedback using `pyttsx3`.
-
-- 🌐 **Translation Support** *(optional)*  
-  Offers translation of spoken text using the `googletrans` library.
-
-- ✨ **Clean UI with Animation**  
-  Floating language tags animate in a soft blue-themed layout.
-
----
-
-## 🧰 Tech Stack
-
-- **Python 3.11+**
-- **Flask**
-- **FastText** (or `langdetect` fallback)
-- **pyttsx3**
-- **googletrans**
-- **HTML / CSS / JavaScript**
-
----
+🧰 Tech Stack
+Python 3.11+
+Flask
+FastText (custom or pre-trained models)
+HTML / CSS / JavaScript
+Optional: pyttsx3 or TTS module (for future vocalization)
 🎯 Vision
+drāviḍa is more than a tool — it’s a digital tribute to the spoken soul of South India.
+Future goals include:
 
-drāviḍa is more than a tool—it's a tribute to the living legacy of South Indian languages. In the future, we aim to:
-
-Enhance recognition for mixed-language inputs.
-Support more languages and dialects.
-Add real-time subtitle generation.
-Integrate cultural learning or LLM-based contextual understanding.
----
+🔤 Better handling of code-mixed and ambiguous inputs
+🗣️ Optional voice synthesis in native accents
+🧠 LLM integration for dialect insights or cultural context
+📺 Real-time subtitle generation for transliterated videos
 🌸 Inspired By
-
-The name drāviḍa honors the shared linguistic and cultural threads that bind the southern states of India. This project seeks to bridge heritage with modern AI in an accessible and meaningful way.
+The name drāviḍa honors the deep linguistic and cultural threads that unite the southern states of India. This project bridges cultural heritage and modern AI, offering a small yet meaningful step toward inclusive technology for multilingual communities.
