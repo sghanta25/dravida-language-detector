@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>drāviḍa - South Indian Language Detector</title>
+    <style>
+        body {
+            background-color: powderblue;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            color: black; 
+        }
+
+        h1 {
+            font-size: 72px; 
+            color: black; 
+            margin-top: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: black; 
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            width: 350px;
+            margin-top: 20px; 
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 15px;
+            font-size: 16px;
+            border: none;
+            background-color: #007acc;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005c99;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: black; 
+        }
+
+        .floating-words {
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            right: 50%;
+            transform: translateX(50%);
+            animation: floatWords 5s ease-in-out infinite;
+            z-index: -1;
+        }
+
+        .floating-words span {
+            display: inline-block;
+            margin: 0 15px;
+            animation: floatAnimation 3s ease-in-out infinite;
+        }
+
+        @keyframes floatWords {
+            0% {
+                top: 10px;
+                opacity: 0;
+            }
+            50% {
+                top: 50px;
+                opacity: 1;
+            }
+            100% {
+                top: 10px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes floatAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>drāviḍa</h1>
+    <h3>South Indian Language Detector</h3>
+    <div class="container">
+        <input type="text" id="inputText" placeholder="Type your sentence here..." />
+        <br />
+        <button onclick="detectLanguage()">Detect Language</button>
+        <p id="output"></p>
+    </div>
+
+    <div class="floating-words">
+        <span>తెలుగు</span>
+        <span>தமிழ்</span>
+        <span>മലയാളം</span>
+        <span>ಕನ್ನಡ</span>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
